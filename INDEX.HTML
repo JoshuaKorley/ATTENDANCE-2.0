@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="STYLE.CSS">
 </head>
 <body>
-    <header><h1>Student Attendance Portal</h1></header>
+    <header><div class="header text"><h1>Student Attendance Portal</h1></header></div>
   <center><div class="container" >
         <form id="attendance-form">
             <label for="student-name">Student Name</label>
@@ -48,31 +48,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        document.getElementById('attendance-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const name = document.getElementById('student-name').value;
-            const date = document.getElementById('date').value;
-            const status = document.getElementById('status').value;
-
-            fetch('https://script.google.com/macros/s/AKfycbxVkAKQ8e5mK3S3bA6iZGnjf6Foa9afNrEPtlaFlVt1gdPf-mdiSwmo8avpy45yUPGrA/exec', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => {
-                console.log('Success:', result);
-                alert('Attendance recorded successfully!');
-                document.getElementById('attendance-form').reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
-    </script>
+           
 </body>
 </html>

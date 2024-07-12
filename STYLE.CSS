@@ -97,4 +97,7 @@ th, td {
         background-repeat: no-repeat;
         background-position:left ;
 }
+.header text{
+    padding-bottom: 40%;
+}
 }
