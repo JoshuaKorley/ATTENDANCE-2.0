@@ -89,10 +89,10 @@ th, td {
 @media screen and (max-width: 768px){
     header{
         font-family: Arial, sans-serif;
-        background-color: #051f74;
+        
         padding: 15px;
         margin: 15px;
-        color: dimgray;
+        color: rgba(8, 24, 241, 0.815);
         background-image: url(images\ \(1\).jpg);
         background-repeat: no-repeat;
         background-position:left ;
