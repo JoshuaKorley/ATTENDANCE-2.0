@@ -31,6 +31,12 @@ header h1 {
     position: relative;
     z-index: 1; 
 }
+.head{
+    display: flex;
+    margin-left: 70%;
+    gap:5%;
+}
+
 
 .container {
     background-color: #fff;
