@@ -31,9 +31,10 @@ header h1 {
     position: relative;
     z-index: 1; 
 }
+
 .head{
     display: flex;
-    margin-left: 70%;
+    margin-left: 80%;
     gap:5%;
 }
 
@@ -126,7 +127,11 @@ th, td {
     header {
         background-size: 100px 100%; 
     }
-
+    .head{
+        display: flex;
+        margin-left: 80%;
+        gap:5%;
+    }
     header h1 {
         font-size: 1.0em; 
        margin-left: 30%; 
